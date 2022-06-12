@@ -1,0 +1,268 @@
+/*                          */
+/*           Color          */
+/*                          */
+@import url(components/card.css);
+:root {
+	--color-coffee-001: #fff4ea;
+	--COLcoffee-01: #e1d0b7;
+	--COLcoffee-1: #bead91;
+	--COLcoffee-10: #7b756b;
+	--COLcoffee-100: #403e3d;
+
+	--COLice-01: #aedde3;
+	--COLice-001: #d9f2f7;
+	--COLice-01: #86abb0;
+	--COLice-10: #5f797d;
+	--COLice-100: #384749;
+
+	--COLsunset-001: #ffddc1;
+	--COLsunset-01: #f79c50;
+	--COLsunset-01: #c37b3f;
+	--COLsunset-10: #7a4d28;
+	--COLsunset-100: #905a2e;
+
+	--COLforest-001: #c2ffe9;
+	--COLforest-01: #91e5bc;
+	--COLforest-01: #70b292;
+	--COLforest-10: #4f7e68;
+	--COLforest-100: #2f4b3d;
+}
+/*                          */
+/*           Media          */
+/*                          */
+/* __ (min-width: 375px) __ */
+/* __ (min-width: 768px) _ */
+/* __ (min-width: 992px) _ */
+/* _ (min-width: 1280px) _ */
+
+body {
+	font-family: "Poppins", sans-serif;
+	font-weight: 400;
+	color: var(--color-coffee-001);
+	margin: 0 auto;
+	max-width: 130rem;
+}
+
+/* _________ Fonts ________ */
+body,
+p {
+	font-size: 0.875rem;
+	max-width: 100vw;
+}
+h1 {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin: 0;
+}
+@media screen and (min-width: 20rem) {
+	.body,
+	p {
+		font-size: calc(0.875rem + 0.5 * ((100vw - 20rem) / 60));
+	}
+	h1 {
+		font-size: calc(2.5rem + 0.5 * ((100vw - 20rem) / 60));
+	}
+   h2 {
+		font-size: calc(1.2rem + 0.5 * ((100vw - 20rem) / 60));
+	}
+}
+
+@media screen and (min-width: 80rem) {
+	body,
+	p {
+		font-size: 1.375rem;
+	}
+}
+
+/* ________ Button ________ */
+.button {
+	width: 200px;
+	height: 55px;
+
+	background-color: #47b4b2;
+	text-align: center;
+	font-size: 30px;
+	font-weight: 400;
+	padding-top: 5px;
+	margin-top: 20px;
+	border-radius: 20px;
+}
+
+.button:hover {
+	background-color: #4befec;
+}
+
+.button:active {
+	background-color: #aaafb9;
+	color: #808080;
+}
+section {
+	background-color: rgb(38, 33, 21);
+}
+
+.header {
+	background-color: #1c1d25;
+	height: 100vh;
+	color: white;
+	font-size: 40px;
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+}
+
+ul {
+	display: flex;
+	list-style-type: none;
+	width: 500px;
+	justify-content: space-around;
+	font-size: 30px;
+}
+
+li {
+	text-decoration: none;
+}
+
+h1 {
+	font-size: 90px;
+	margin: 0;
+}
+
+h2 {
+	font-size: 50px;
+}
+
+.info_card {
+	font-size: 15px;
+	font-weight: 300;
+}
+
+.header_area {
+	display: flex;
+	height: 100%;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header-text {
+	margin-left: 80px;
+	margin-bottom: 200px;
+}
+
+.sub_section {
+	display: flex;
+	justify-content: space-around;
+	padding: 80px;
+}
+
+.about_me_content {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+   justify-content: center
+}
+.sub_section-alternative {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	padding: 80px;
+}
+
+.headshot {
+	width: 300px;
+	border-radius: 150px;
+   margin: 10%;
+}
+
+.headshot_container {
+	display: flex;
+	align-items: center;
+}
+
+.project_card {
+	width: 300px;
+	height: 500px;
+	box-shadow: 5px 5px 20px rgb(197, 195, 195);
+	margin: 10px;
+}
+
+.project-container {
+	display: flex;
+	justify-content: space-around;
+}
+
+footer {
+	background-color: transparent;
+	color: white;
+	text-align: center;
+	padding: 80px;
+}
+
+@media only screen and (max-width: 1000px) {
+	.project-container {
+		display: flex;
+		flex-wrap: wrap;
+	}
+}
+
+.project-image {
+	margin-top: 25px;
+	width: 250px;
+	border-radius: 125px;
+}
+
+hr {
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.project_link {
+	text-decoration: none;
+	color: #ef744b;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+.hamburger {
+	display: none;
+}
+
+.hamburger:focus {
+	outline: 0;
+}
+
+@media only screen and (max-width: 1000px) {
+	.hamburger {
+		display: block;
+		border: 0;
+		background-color: transparent;
+		color: white;
+		font-size: 30px;
+		margin: 20px;
+		align-self: flex-end;
+	}
+
+	ul {
+		display: none;
+		background-color: #2b2c38;
+		margin: 0ppx;
+	}
+
+	ul.show {
+		display: block;
+	}
+
+	nav {
+		display: flex;
+		flex-direction: column-reverse;
+		background-color: #2b2c38;
+	}
+
+	.logo {
+		display: none;
+	}
+}
